@@ -31,10 +31,10 @@ const App: React.FC = () => {
               <h3 className="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8">About</h3>
               <div className="text-slate-600 leading-relaxed text-lg sm:text-xl space-y-8">
                 <p>
-                  I am a fourth-year <strong className="font-medium text-slate-900">Mechatronics Engineering student</strong> at the Federal University of Technology Minna, Nigeria, with a strong interest in <strong className="font-medium text-slate-900">Computer Science</strong> as it applies to intelligent automation and autonomous systems.
+                  I am a fourth-year Mechatronics Engineering student the Federal University of Technology Minna, Nigeria, with a strong interest in Computer Science as it applies to intelligent automation and autonomous systems.
                 </p>
                 <p>
-                  Through projects spanning robotics, machine learning, and distributed systems, I have become increasingly interested in the <strong className="font-medium text-slate-900">computational foundations of autonomy</strong>: particularly how representation, inference, and algorithmic decision-making enable reliable behavior in systems operating under uncertainty.
+                  Through projects spanning robotics, machine learning, and distributed systems, I have become increasingly interested in the computational foundations of autonomy particularly how representation, inference, and algorithmic decision-making enable reliable behavior in systems operating under uncertainty.
                 </p>
               </div>
             </div>
