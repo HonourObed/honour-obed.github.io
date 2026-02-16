@@ -10,7 +10,7 @@ const App: React.FC = () => {
     <div
       className="bg-slate-50 min-h-screen selection:bg-teal-300 selection:text-teal-900"
       style={{
-        backgroundImage: 'radial-gradient(rgba(100, 116, 139, 0.15) 1.5px, transparent 1.5px)',
+        backgroundImage: 'radial-gradient(rgba(100, 116, 139, 0.08) 1.5px, transparent 1.5px)',
         backgroundSize: '24px 24px'
       }}
     >
