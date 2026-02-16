@@ -7,29 +7,29 @@ import { PROJECTS, NEWS_ITEMS } from './constants';
 
 const App: React.FC = () => {
   return (
-    <div 
+    <div
       className="bg-slate-50 min-h-screen selection:bg-teal-300 selection:text-teal-900"
       style={{
-        backgroundImage: 'radial-gradient(rgba(100, 116, 139, 0.25) 1.5px, transparent 1.5px)',
+        backgroundImage: 'radial-gradient(rgba(100, 116, 139, 0.15) 1.5px, transparent 1.5px)',
         backgroundSize: '24px 24px'
       }}
     >
       <Navbar />
-      
+
       {/* Main Container: Widened to max-w-7xl for a more expansive feel */}
       <div className="mx-auto max-w-7xl px-6 py-12 pt-28 font-sans md:px-12 md:py-24">
-        
+
         {/* Home / Intro Section */}
         <section id="home" className="mb-24 md:mb-40 scroll-mt-32">
           <Sidebar />
-          
+
           <div className="mt-16 md:mt-24 grid grid-cols-1 lg:grid-cols-12 gap-12">
             <div className="hidden lg:block lg:col-span-4">
               {/* Spacer or additional context could go here, currently empty to offset text */}
             </div>
             <div className="lg:col-span-8">
-               <h3 className="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8">About</h3>
-               <div className="text-slate-600 leading-relaxed text-lg sm:text-xl space-y-8">
+              <h3 className="text-sm font-bold uppercase tracking-widest text-slate-500 mb-8">About</h3>
+              <div className="text-slate-600 leading-relaxed text-lg sm:text-xl space-y-8">
                 <p>
                   I am a fourth-year <strong className="font-medium text-slate-900">Mechatronics Engineering student</strong> at the Federal University of Technology Minna, Nigeria, with a strong interest in <strong className="font-medium text-slate-900">Computer Science</strong> as it applies to intelligent automation and autonomous systems.
                 </p>
@@ -44,18 +44,18 @@ const App: React.FC = () => {
         {/* Projects Section */}
         <section id="projects" className="mb-24 md:mb-40 scroll-mt-28" aria-label="Selected projects">
           <div className="mb-16 border-b border-slate-200 pb-8">
-             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Selected Projects</h2>
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Selected Projects</h2>
           </div>
-          
+
           {/* Grid Layout: 2 columns on large screens to 'fit more' and 'spread out' */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
             {PROJECTS.map((project) => (
               <ProjectCard key={project.id} project={project} />
             ))}
           </div>
-          
+
           <div className="mt-20 text-center md:text-left">
-            <a 
+            <a
               href="https://github.com/HonourObed"
               target="_blank"
               rel="noopener noreferrer"
@@ -74,12 +74,12 @@ const App: React.FC = () => {
           <div className="mb-12 border-b border-slate-200 pb-8">
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">News</h2>
           </div>
-          
+
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-             {/* Use full width for news, or constrain if preferred. Here we use 8 cols to keep it readable but distinct from projects */}
-             <div className="lg:col-span-10">
-                <NewsList items={NEWS_ITEMS} />
-             </div>
+            {/* Use full width for news, or constrain if preferred. Here we use 8 cols to keep it readable but distinct from projects */}
+            <div className="lg:col-span-10">
+              <NewsList items={NEWS_ITEMS} />
+            </div>
           </div>
         </section>
 
