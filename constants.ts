@@ -1,10 +1,18 @@
-import { Project, NewsItem, SocialLink } from './types';
+import { Presentations, Project, NewsItem, SocialLink } from './types';
 
 export const SOCIAL_LINKS: SocialLink[] = [
   { label: 'Gmail', url: 'mailto:obedhonoureje@gmail.com', icon: 'mail' },
   { label: 'CV', url: 'https://drive.google.com/file/d/1OHcFWrUBBTZSL0hdQKnflnjyme5OouG4/view?usp=sharing', icon: 'file-text' },
   { label: 'GitHub', url: 'https://github.com/HonourObed', icon: 'github' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/obed-honour-eje-atomic/', icon: 'linkedin' },
+];
+
+export const PRESENTATIONS: Presentations[] = [
+  {
+    id: '1',
+    year: '2026',
+    description: 'Occlusion-Aware Object Detection for Autonomous Robots Using Monocular Depth Estimation - ML Collective Research Jam, April 2026 (co-presenter)'
+  }
 ];
 
 export const PROJECTS: Project[] = [
@@ -52,9 +60,17 @@ export const PROJECTS: Project[] = [
 
 export const NEWS_ITEMS: NewsItem[] = [
  { 
-    id: '13', 
+    id: '15', 
+    date: 'April 2026', 
+    content: 'Selected for the ROSCon 2026 Diversity Scholarship Program with Fully sponsored participation at ROSCon 2026, Toronto',
+    link: 'https://roscon.ros.org/2026/'
+  },
+
+  { 
+    id: '14', 
     date: 'Feb 2026', 
-    content: 'Won the IDEA Travel Grant for fully funded participation at the IEEE International Conference on Robotics and Automation (ICRA 2026)',
+    content: 'Won the IDEA Travel Grant for fully funded participation at the IEEE International Conference on Robotics and Automation (ICRA) 2026, Austria',
+    link: 'https://2026.ieee-icra.org/'
   },
   
   { 
@@ -100,6 +116,7 @@ export const NEWS_ITEMS: NewsItem[] = [
     id: '6', 
     date: 'Jan 2025', 
     content: 'Awarded the Petroleum Trust Fund (PTDF) In-Country Scholarship (ISS).' 
+    link: 'https://ptdf.gov.ng/'
   },
   { 
     id: '5', 

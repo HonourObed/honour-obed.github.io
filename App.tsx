@@ -1,9 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import Presentations from './components/Presentations';
 import ProjectCard from './components/ProjectCard';
 import NewsList from './components/NewsList';
 import { PROJECTS, NEWS_ITEMS } from './constants';
+import PresentationsCard from './components/Presentations';
 
 const App: React.FC = () => {
   return (
@@ -40,6 +42,19 @@ const App: React.FC = () => {
             </div>
           </div>
         </section>
+
+        {/* Presentations Section */}
+        <section id="projects" className="mb-24 md:mb-40 scroll-mt-28" aria-label="Presentations">
+          <div className="mb-16 border-b border-slate-200 pb-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-slate-900">Selected Projects</h2>
+          </div>
+
+          {/* Grid Layout: 2 columns on large screens to 'fit more' and 'spread out' */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-16">
+            {PRESENTATIONS.map((presentations) => (
+              <PresentationsCard key={presentations.id} preseantations={presentations} />
+            ))}
+          </div>
 
         {/* Projects Section */}
         <section id="projects" className="mb-24 md:mb-40 scroll-mt-28" aria-label="Selected projects">
