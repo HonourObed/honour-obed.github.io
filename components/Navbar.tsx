@@ -22,7 +22,7 @@ const Navbar: React.FC = () => {
   // Update active section on scroll
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'projects', 'news'];
+      const sections = ['home', 'projects', 'presentations', 'news'];
       const scrollPosition = window.scrollY + 150;
 
       for (const section of sections) {
@@ -40,6 +40,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Home', id: 'home' },
     { name: 'Projects', id: 'projects' },
+    { name: 'Presentations', id: 'presentations' },
     { name: 'News', id: 'news' },
   ];
 

@@ -13,11 +13,10 @@ const Sidebar: React.FC = () => {
       */}
       <div className="relative w-48 h-48 sm:w-64 sm:h-64 shrink-0 mb-8 lg:mb-0">
         {!imgError ? (
-          <img
-            src="/img/Profile.jpeg"
-            alt="Obed Honour Eje"
-            className="w-full h-full rounded-2xl object-cover shadow-sm"
-            onError={() => setImgError(true)}
+          <img 
+            src="/img/Profile.jpg" 
+            alt="Obed Honour Eje" 
+            className="w-full h-full object-top rounded-2xl" 
           />
         ) : (
           <div className="w-full h-full rounded-2xl bg-slate-200 flex items-center justify-center shadow-sm">

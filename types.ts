@@ -24,3 +24,12 @@ export interface SocialLink {
   url: string;
   icon: 'mail' | 'github' | 'linkedin' | 'file-text';
 }
+
+export interface Presentations {
+  id: string;
+  title: string;
+  authors: string;
+  venue: string;
+  date?: string;
+  type: string;
+}
