@@ -2,7 +2,7 @@ import { Presentations, Project, NewsItem, SocialLink } from './types';
 
 export const SOCIAL_LINKS: SocialLink[] = [
   { label: 'Gmail', url: 'mailto:obedhonoureje@gmail.com', icon: 'mail' },
-  { label: 'CV', url: 'https://drive.google.com/file/d/1ONDGiYvja8WI9i-zuL1x4szbvVwQy0SO/view?usp=drive_link', icon: 'file-text' },
+  { label: 'CV', url: 'https://drive.google.com/file/d/1QitN0AGizcliGG5QFP1vk3PN8ST_xo8e/view?usp=sharing', icon: 'file-text' },
   { label: 'GitHub', url: 'https://github.com/HonourObed', icon: 'github' },
   { label: 'LinkedIn', url: 'https://www.linkedin.com/in/obed-honour-eje-atomic/', icon: 'linkedin' },
 ];
